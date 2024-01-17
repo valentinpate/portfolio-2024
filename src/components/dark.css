@@ -1,0 +1,36 @@
+:root{
+    --dark:#705523;
+    --font:#ECECA9;
+    --borders:#c2b130;
+}
+
+option{
+    color:black;
+}
+
+.dark-font{
+    color:var(--font);
+}
+
+.dark-header{
+    background-color:var(--dark);
+}
+
+.dark-select{
+    color:var(--font);
+    border:1px solid var(--borders);
+}
+
+.dark-header nav a:hover{
+    border: 2px solid var(--borders);
+}
+
+.dark-title-btn:hover{
+    background-color:transparent;
+    color:var(--font);
+    border:2px solid var(--font);
+}
+
+.dark-header nav a{
+    color:var(--font);
+}

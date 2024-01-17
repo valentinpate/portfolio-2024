@@ -1,0 +1,21 @@
+:root{
+    --clear:#ECECA9;
+}
+
+.clear-header nav a:hover{
+    border: 2px solid rgb(73, 73, 73);
+}
+
+.clear-title-btn:hover{
+    background-color:transparent;
+    color:black;
+    border:2px solid black;
+}
+
+.clear-header{
+    background-color:var(--clear)
+}
+
+.clear-select{
+    border:1px solid black;
+}
