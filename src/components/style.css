@@ -14,6 +14,7 @@ nav{
 }
 
 a{
+    cursor:pointer;
     color:black;
     text-decoration:none;
     transition: all 0.5s;
@@ -44,9 +45,15 @@ nav a{
 
 /* III - PSEUDOCLASES */
 
-
+/* .project-image img:last-child{
+    filter:invert(100%);
+} */
 
 /* IV - CLASES */
+
+.uppercase{
+    text-transform: uppercase;
+}
 
 .logo{
     width:5em;
@@ -68,6 +75,11 @@ nav a{
     justify-content:space-between;
 }
 
+.hero-content{
+    padding-top:1.5em;
+    padding-right:1em;
+}
+
 .photo{
     width:35em;
     border-radius:1rem;
@@ -85,17 +97,12 @@ nav a{
     width:2.5em;
 }
 
-.separator{
+.separator, .dots{
     padding:2em 0;
     display:flex;
     justify-content:center;
 }
 
-.intro{
-    padding-top:3em;
-    width:90%;
-    margin:0 auto;
-}
 
 .title{
     padding-bottom:2em;
@@ -110,8 +117,64 @@ nav a{
     transition:all 0.5s;
 }
 
+.intro, .experience{
+    padding-top:3em;
+    width:90%;
+    margin:0 auto;
+}
+
 .intro-intro{
-    padding-bottom:3em;
+    padding-bottom:2em;
+}
+
+.project-box{
+    width:95%;
+    margin:0 auto;
+    padding:3em 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:1rem;
+}
+
+.project-image{
+    padding:2em 0;
+}
+
+.languages{
+    width:100%;
+    padding-bottom:4em;
+    display:flex;
+    justify-content:center;
+}
+
+.front, .back{
+    width:100%;
+    margin:0 3em;
+}
+
+.proj-desc{
+    width:80%;
+}
+
+.proj-link{
+    padding:0.1em 0.3em;
+    font-size:4.5rem;
+    border:2px solid transparent;
+    border-radius:100%;
+}
+
+.links{
+    width:80%;
+    padding-top:4em;
+    padding-bottom:0.5em;
+    display:flex;
+    justify-content:center;
+}
+
+.original, .github{
+    width:100%;
 }
 
 /* V - HIJOS DE CLASES */
@@ -145,15 +208,21 @@ nav a{
     letter-spacing:0.8em;
 }
 
+.dots h1{
+    opacity:75%;
+    font-size:6.5rem;
+    font-weight:bold;
+}
+
 .separator h1 span{
     letter-spacing:0;
 }
 
-.intro h1{
+.intro h1, .experience h1{
     font-weight:bold;
 }
 
-.intro p{
+.intro p, .exp-desc{
     font-size:1.6rem;
 }
 
@@ -162,4 +231,15 @@ nav a{
     font-size:2rem;
     border:2px solid transparent;
     border-radius:100%;
+}
+
+.project-image img{
+    width:46em;
+    margin: 0 1em;
+    border-radius:1rem;
+}
+
+.languages img{
+    width:7em;
+    margin:0 0.5em;
 }

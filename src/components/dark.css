@@ -21,6 +21,12 @@ option{
     border:1px solid var(--borders);
 }
 
+.dark-project-box{
+    background-color:#372611;
+    color:var(--font);
+    border:10px solid var(--font);
+}
+
 .dark-header nav a:hover{
     border: 2px solid var(--borders);
 }

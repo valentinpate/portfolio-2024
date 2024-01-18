@@ -1,6 +1,7 @@
 import './App.css';
 import Hero from './components/body/Hero';
 import Intro from './components/body/Intro';
+import Exp from './components/body/Exp';
 import { DarkMode } from './context/DarkMode';
 import { useState } from 'react';
 
@@ -17,7 +18,7 @@ function App() {
     <DarkMode.Provider value={{dark, setDark}}>
       <Hero/>
       <Intro/>
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum excepturi sit veniam nihil qui cum doloremque molestiae, quam aliquam ipsum maxime expedita quos reiciendis vel explicabo nostrum temporibus voluptate.</h1>
+      <Exp/>
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum excepturi sit veniam nihil qui cum doloremque molestiae, quam aliquam ipsum maxime expedita quos reiciendis vel explicabo nostrum temporibus voluptate.</h1>
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum excepturi sit veniam nihil qui cum doloremque molestiae, quam aliquam ipsum maxime expedita quos reiciendis vel explicabo nostrum temporibus voluptate.</h1>
     </DarkMode.Provider>

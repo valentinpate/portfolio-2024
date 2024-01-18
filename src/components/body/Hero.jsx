@@ -17,15 +17,15 @@ function Hero() {
                     <option value="es">Español</option>
                     <option value="en">English</option>
             </select>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onClick={set}/>
-                <label class="form-check-label" for="flexCheckDefault">Modo oscuro</label>
+            <div className="form-check">
+                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" onClick={set}/>
+                <label className={dark ? "form-check-label dark-font" : "form-check-label"} for="flexCheckDefault">Modo oscuro</label>
             </div>
         </div>
         <div className="hero">
             <img src="/test.jpg" alt="" className="photo" />
             <div className={dark ? "hero-content dark-font" : "hero-content"}>
-                <h1>Pate Valentín</h1>
+                <h1>Valentín Pate</h1>
                 <h2>Programador Web Full Stack</h2>
                 <div className="Argentina">
                     <h3>Buenos Aires, Argentina</h3>

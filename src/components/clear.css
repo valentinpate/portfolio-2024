@@ -1,5 +1,7 @@
 :root{
     --clear:#ECECA9;
+    --back:#705523;
+    --font:#c2b130;
 }
 
 .clear-header nav a:hover{
@@ -18,4 +20,10 @@
 
 .clear-select{
     border:1px solid black;
+}
+
+.clear-project-box{
+    background-color:var(--back);
+    color:var(--font);
+    border:10px solid #372611;
 }
