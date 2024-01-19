@@ -1,20 +1,11 @@
-import './style.css'
-import './clear.css'
-import './dark.css'
+import '../css/style.css'
+import '../css/clear.css';
+import '../css/dark.css'
 import { useContext } from 'react'
-import { DarkMode } from '../context/DarkMode'
+import { DarkMode } from '../../context/DarkMode'
 
 function Project({ name, img, front, back, desc, link, repo, deploy }){
     const {dark} = useContext(DarkMode)
-    function langMap(param){
-        if(param == null){
-            return <h3>param</h3>
-        }else{
-            param.map((p)=>{
-                return <img src={p} alt="" />
-            })
-        }
-    }
     return(
         <div className="project">
             <div className={dark ? "dots dark-font" : "dots"}>

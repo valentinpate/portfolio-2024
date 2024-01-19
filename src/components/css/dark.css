@@ -27,6 +27,12 @@ option{
     border:10px solid var(--font);
 }
 
+.dark-input{
+    background-color:#372611;
+    color:var(--font);
+    border:3px solid var(--font);
+}
+
 .dark-header nav a:hover{
     border: 2px solid var(--borders);
 }

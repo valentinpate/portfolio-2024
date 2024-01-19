@@ -1,5 +1,7 @@
+//import i18next
+
 const proj = [ {
-    name: "HTML - CSS Portfolio ",
+    name: "HTML - CSS Portfolio",
     img:["/img/projects/hc1.png","/img/projects/hc2.png"],
     front:["/img/program/frontend/html.png","/img/program/frontend/css.png"], //lenguajes front
     back:null, //lenguajes back
@@ -21,13 +23,12 @@ const proj = [ {
 {
     name:"MOWARDIN E-Commerce",
     img:["/img/projects/m1.png","/img/projects/m2.png"],
-    front:["/img/program/frontend/html.png","/img/program/frontend/css.png","/img/program/frontend/js.png","/img/program/frontend/bootstrap.png"],
-    back:["/img/program/backend/node.png","img/program/backend/express.png","img/program/backend/mongo.png","img/program/backend/ejs.svg"],
+    front:["/img/program/frontend/html.png","/img/program/frontend/css.png","/img/program/frontend/js.png"],
+    back:["/img/program/backend/node.png","img/program/backend/mongo.png","img/program/backend/ejs.svg"],
     desc:"Mi primera vez desarrollando un e-commerce desde cero en equipo. Ninguno de los miembros del grupo había hecho un trabajo de este nivel con Node.js pero con una firme organización y voluntad entre nosotros logramos tomar el control y rearmar este e-commerce diseñado en Behance con base de datos MongoDB Atlas desde cero. Subido a GitHub en noviembre de 2023.",
     link:"https://www.behance.net/gallery/178323505/MOWARDIN-Responsive-Design",
     repo:"https://github.com/valentinpate/ECOMMERCE",
     deploy:"https://mowardin.onrender.com/"
-},//mowardin
-]
+} ]
 
 export default proj

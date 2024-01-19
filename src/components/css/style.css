@@ -49,6 +49,16 @@ nav a{
     filter:invert(100%);
 } */
 
+.other-button:hover{
+    background-color:black;
+    border:5px solid black;
+}
+
+.clicked-button:hover{
+    background-color:#1a1c1f;
+    border:5px solid #1a1c1f;
+}
+
 /* IV - CLASES */
 
 .uppercase{
@@ -117,7 +127,7 @@ nav a{
     transition:all 0.5s;
 }
 
-.intro, .experience{
+.intro, .experience, .contact{
     padding-top:3em;
     width:90%;
     margin:0 auto;
@@ -178,6 +188,71 @@ nav a{
     width:100%;
 }
 
+.others{
+    width:50%;
+    height:22em;
+    margin:3em auto 1em auto;
+    border-radius:1rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.other{
+    margin:2em;
+    display:flex;
+    align-items:center;
+}
+
+.other-buttons{
+    display: flex;
+    justify-content:center;
+}
+
+.other-button{
+    margin:0 1em;
+    padding:0.3em 0.6em;
+    font-size:1.4rem;
+    background-color:#1a1c1f;
+    color:white;
+    border:5px solid #1a1c1f;
+    border-radius:0.5rem;
+    transition: all 0.5s;
+}
+
+.clicked-button{
+    margin:0 1em;
+    padding:0.3em 0.6em;
+    font-size:1.4rem;
+    background-color:black;
+    color:#f3a52f;
+    border:5px solid black;
+    border-radius:0.5rem;
+    transition: all 0.5s;
+}
+
+.media{
+    display:flex;
+    justify-content:space-evenly;
+    padding-bottom:2.5em;
+}
+
+.form{
+    width:60%;
+    margin:0 auto;
+    padding:2em 0 3em 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:1rem;
+}
+
+.form-section{
+    display:flex;
+    flex-direction:column;
+}
+
 /* V - HIJOS DE CLASES */
 
 .options select, .options .form-check{
@@ -219,7 +294,7 @@ nav a{
     letter-spacing:0;
 }
 
-.intro h1, .experience h1{
+.intro h1, .experience h1, .contact h1{
     font-weight:bold;
 }
 
@@ -254,6 +329,27 @@ nav a{
     margin-bottom:1em;
 }
 
+.others h3{
+    margin-left:1em;
+    margin-bottom:0.5em;
+}
+
 .others img{
-    width:7em;
+    width:9em;
+    margin:1em 2em;
+}
+
+.form-section label{
+    margin:0.8em 0 0.4em 0;
+    font-size:1.2rem;
+}
+
+.form-section input, .form-section textarea{
+    width:50em;
+    padding:0.5em 0.6em;
+    border-radius:0.5rem;
+}
+
+.form-section textarea{
+    resize:none;
 }

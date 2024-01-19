@@ -1,9 +1,9 @@
-import '../style.css'
-import '../clear.css';
-import '../dark.css'
+import '../css/style.css'
+import '../css/clear.css';
+import '../css/dark.css'
 import proj from '../proj';
-import Project from '../Project';
-import Skills from './Skills';
+import Project from '../parts/Project';
+import Skills from '../parts/Skills';
 import { DarkMode } from '../../context/DarkMode';
 import { useState, useContext } from 'react';
 
@@ -24,35 +24,12 @@ function Exp(){
                 <h1>░░░░░░░░░░░░░░░░░░░░░░░░</h1>
             </div>
             <div className="title">
-                <h1>Otras habilidades</h1>
-                <button className={dark ? "dark-title-btn" : "clear-title-btn"} onClick={()=>{window.scrollTo(0,0)}} title="Ir al inicio"><i class="bi bi-arrow-up-short"></i></button>
+                <h2>Más habilidades</h2>
+                {/* <button className={dark ? "dark-title-btn" : "clear-title-btn"} onClick={()=>{window.scrollTo(0,0)}} title="Ir al inicio"><i class="bi bi-arrow-up-short"></i></button> */}
             </div>
-            <div className="others">
-                <div class="frameworks-js"> 
-                {/* poner bordes */}
-                    <h4>Framework JS</h4>
-                    <img src="/img/program/frontend/vite.svg" alt="" />
-                </div>
-                <div className="frameworks-css">
-                    <h4>Framework CSS</h4>
-                    <img src="/img/program/frontend/bootstrap.png" alt="" />
-                    <img src="/img/program/frontend/bulma.png" alt="" />
-                    <img src="/img/program/frontend/materialize.png" alt="" />
-                </div>
-                <div className="db">
-                    <h4>Bases de datos</h4>
-                    <img src="/img/program/backend/sql.png" alt="" />
-                </div>
-                <div className="tools">
-                    <h4>Otros</h4>
-                    <img src="/img/program/others/vegas.png" alt="" />
-                    <img src="/img/program/others/premiere.png" alt="" />
-                    <img src="/img/program/others/pixlr.svg" alt="" />
-                </div>
-                <div className="other">
-                    <h4>Nivel B2 en Inglés</h4>
-                    <img src="/img/program/others/cambridge.png" alt="" />
-                </div>
+            <Skills/>
+            <div className={dark ? "separator dark-font" : "separator"}>
+                <h1>~~~~~~~~~~~~<span>~</span></h1>
             </div>
         </section>
     )

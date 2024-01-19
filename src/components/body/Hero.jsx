@@ -1,8 +1,9 @@
-import '../clear.css';
-import '../dark.css'
+import '../css/style.css'
+import '../css/clear.css';
+import '../css/dark.css'
 import { DarkMode } from '../../context/DarkMode';
 import { useState, useContext } from 'react';
-import Header from '../Header';
+import Header from '../parts/Header';
 
 function Hero() {
     const {dark, setDark} = useContext(DarkMode)

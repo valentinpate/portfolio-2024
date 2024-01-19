@@ -2,6 +2,7 @@ import './App.css';
 import Hero from './components/body/Hero';
 import Intro from './components/body/Intro';
 import Exp from './components/body/Exp';
+import Contact from './components/body/Contact';
 import { DarkMode } from './context/DarkMode';
 import { useState } from 'react';
 
@@ -19,7 +20,7 @@ function App() {
       <Hero/>
       <Intro/>
       <Exp/>
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum excepturi sit veniam nihil qui cum doloremque molestiae, quam aliquam ipsum maxime expedita quos reiciendis vel explicabo nostrum temporibus voluptate.</h1>
+      <Contact/>
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum excepturi sit veniam nihil qui cum doloremque molestiae, quam aliquam ipsum maxime expedita quos reiciendis vel explicabo nostrum temporibus voluptate.</h1>
     </DarkMode.Provider>
   );

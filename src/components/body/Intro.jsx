@@ -1,6 +1,6 @@
-import '../style.css'
-import '../clear.css'
-import '../dark.css'
+import '../css/style.css'
+import '../css/clear.css'
+import '../css/dark.css'
 import { useContext } from 'react'
 import { DarkMode } from '../../context/DarkMode'
 
