@@ -4,7 +4,7 @@ import './dark.css'
 import { useContext } from 'react'
 import { DarkMode } from '../context/DarkMode'
 
-function Project({ name, img, front, back, desc, link, repo }){
+function Project({ name, img, front, back, desc, link, repo, deploy }){
     const {dark} = useContext(DarkMode)
     function langMap(param){
         if(param == null){
@@ -21,7 +21,7 @@ function Project({ name, img, front, back, desc, link, repo }){
                 <h1>░░░░░░░░░░░░░░░░░░░░░░░░</h1>
             </div>
             <div className={dark ? "project-box text-center position-relative dark-project-box" : "project-box text-center position-relative clear-project-box"}>
-                <h1>{name}</h1>
+                <h2>{name}</h2>
                 <div className="project-image">
                     {img.map((i)=>{
                         return <img src={i} alt="" />
@@ -29,7 +29,7 @@ function Project({ name, img, front, back, desc, link, repo }){
                 </div>
                 <div className="languages">
                     <div className="front">
-                        <h3 className="uppercase">Front</h3>
+                        <h4 className="uppercase">Front</h4>
                         <div className="front-lang">
                             {front.map((f)=>{
                                 return <img src={f} alt="" />
@@ -37,7 +37,7 @@ function Project({ name, img, front, back, desc, link, repo }){
                         </div>
                     </div>
                     <div class="back">
-                        <h3 className="uppercase">Back</h3>
+                        <h4 className="uppercase">Back</h4>
                         {Array.isArray(back) && back.length > 0 ?
                          <div className="back-lang">
                             {back.map((b)=>{
@@ -48,15 +48,19 @@ function Project({ name, img, front, back, desc, link, repo }){
                          <p>{back}</p>}
                     </div>
                 </div>
-                <p className="exp-desc proj-desc">{desc}</p>
+                <p className="proj-desc">{desc}</p>
                 <div className="links">
                     <div className="original">
-                        <h3 className="uppercase">Diseño original</h3>
+                        <h4 className="uppercase">Diseño original</h4>
                         <a href={link} className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-file-earmark"></i></a>
                     </div>
                     <div className="github">
-                        <h3 className="uppercase">Repositorio de GitHub</h3>
+                        <h4 className="uppercase">Repositorio de GitHub</h4>
                         <a href={repo} className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-github"></i></a>
+                    </div>
+                    <div className="deploy">
+                        <h4 className="uppercase">Deploy</h4>
+                        <a href={deploy} className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-upload"></i></a>
                     </div>
                 </div>
             </div>
