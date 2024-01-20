@@ -21,7 +21,6 @@ function App() {
       <Intro/>
       <Exp/>
       <Contact/>
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum excepturi sit veniam nihil qui cum doloremque molestiae, quam aliquam ipsum maxime expedita quos reiciendis vel explicabo nostrum temporibus voluptate.</h1>
     </DarkMode.Provider>
   );
 }

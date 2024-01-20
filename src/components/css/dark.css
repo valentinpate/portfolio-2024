@@ -1,48 +1,38 @@
-:root{
-    --dark:#705523;
-    --font:#ECECA9;
-    --borders:#c2b130;
-}
-
-option{
-    color:black;
-}
-
-.dark-font{
-    color:var(--font);
-}
-
-.dark-header{
-    background-color:var(--dark);
-}
-
-.dark-select{
-    color:var(--font);
-    border:1px solid var(--borders);
-}
-
-.dark-project-box{
-    background-color:#372611;
-    color:var(--font);
-    border:10px solid var(--font);
-}
-
-.dark-input{
-    background-color:#372611;
-    color:var(--font);
-    border:3px solid var(--font);
+.dark-title-btn:hover{
+    background-color:transparent;
+    color:var(--clear);
+    border:2px solid var(--clear);
 }
 
 .dark-header nav a:hover{
-    border: 2px solid var(--borders);
+    border: 2px solid var(--cfont);
 }
 
-.dark-title-btn:hover{
-    background-color:transparent;
-    color:var(--font);
-    border:2px solid var(--font);
+.dark-font{
+    color:var(--clear);
+}
+
+.dark-header{
+    background-color:var(--back);
+}
+
+.dark-select{
+    color:var(--clear);
+    border:1px solid var(--cfont);
+}
+
+.dark-project-box, .dark-form{
+    background-color:var(--darker);
+    color:var(--clear);
+    border:5px solid var(--darker);
+}
+
+.dark-input{
+    background-color:var(--back);
+    color:var(--clear);
+    border:3px solid var(--darker);
 }
 
 .dark-header nav a{
-    color:var(--font);
+    color:var(--clear);
 }

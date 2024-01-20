@@ -8,11 +8,8 @@ function Project({ name, img, front, back, desc, link, repo, deploy }){
     const {dark} = useContext(DarkMode)
     return(
         <div className="project">
-            <div className={dark ? "dots dark-font" : "dots"}>
-                <h1>░░░░░░░░░░░░░░░░░░░░░░░░</h1>
-            </div>
             <div className={dark ? "project-box text-center position-relative dark-project-box" : "project-box text-center position-relative clear-project-box"}>
-                <h2>{name}</h2>
+                <h2><b>{name}</b></h2>
                 <div className="project-image">
                     {img.map((i)=>{
                         return <img src={i} alt="" />
@@ -20,7 +17,7 @@ function Project({ name, img, front, back, desc, link, repo, deploy }){
                 </div>
                 <div className="languages">
                     <div className="front">
-                        <h4 className="uppercase">Front</h4>
+                        <h4 className="uppercase" style={{fontWeight:"600"}}>Front</h4>
                         <div className="front-lang">
                             {front.map((f)=>{
                                 return <img src={f} alt="" />
@@ -28,7 +25,7 @@ function Project({ name, img, front, back, desc, link, repo, deploy }){
                         </div>
                     </div>
                     <div class="back">
-                        <h4 className="uppercase">Back</h4>
+                        <h4 className="uppercase" style={{fontWeight:"600"}}>Back</h4>
                         {Array.isArray(back) && back.length > 0 ?
                          <div className="back-lang">
                             {back.map((b)=>{
@@ -43,15 +40,15 @@ function Project({ name, img, front, back, desc, link, repo, deploy }){
                 <div className="links">
                     <div className="original">
                         <h4 className="uppercase">Diseño original</h4>
-                        <a href={link} className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-file-earmark"></i></a>
+                        <a href={link} target="_blank" className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-file-earmark"></i></a>
                     </div>
                     <div className="github">
                         <h4 className="uppercase">Repositorio de GitHub</h4>
-                        <a href={repo} className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-github"></i></a>
+                        <a href={repo} target="_blank" className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-github"></i></a>
                     </div>
                     <div className="deploy">
                         <h4 className="uppercase">Deploy</h4>
-                        <a href={deploy} className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-upload"></i></a>
+                        <a href={deploy} target="_blank" className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-upload"></i></a>
                     </div>
                 </div>
             </div>

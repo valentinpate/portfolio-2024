@@ -1,17 +1,11 @@
-:root{
-    --clear:#ECECA9;
-    --back:#705523;
-    --font:#c2b130;
-}
-
-.clear-header nav a:hover{
-    border: 2px solid rgb(73, 73, 73);
-}
-
 .clear-title-btn:hover{
     background-color:transparent;
     color:black;
     border:2px solid black;
+}
+
+.clear-header nav a:hover{
+    border: 2px solid rgb(73, 73, 73);
 }
 
 .clear-header{
@@ -23,13 +17,25 @@
 }
 
 .clear-project-box{
-    background-color:var(--back);
-    color:var(--font);
-    border:10px solid #372611;
+    background-color:#f3f4cd;
+    color:black;
+    border:5px solid var(--darker);
+}
+
+.clear-skills{
+    background-color:var(--darker);
+    color:var(--clear);
+    border:10px solid var(--back);
 }
 
 .clear-input{
     background-color:#604723;
-    color:var(--font);
-    border:3px solid #372611;
+    color:#f3f4cd;
+    border:3px solid var(--darker);
+}
+
+.clear-form{
+    background-color:var(--darker);
+    color:var(--clear);
+    border:5px solid var(--back);
 }

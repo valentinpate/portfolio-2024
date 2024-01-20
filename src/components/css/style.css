@@ -6,6 +6,13 @@
     font-family:'Poppins', sans-serif;
 }
 
+:root{
+    --clear:#ECECA9;
+    --back:#705523;
+    --cfont:#c2b130;
+    --darker:#372611;
+}
+
 
 /* I - ELEMENTOS HTML */
 
@@ -27,11 +34,21 @@ header{
     justify-content:space-between;
 }
 
+footer{
+    margin:6em 0 3em 0;
+    display:flex;
+    justify-content:center;
+}
+
 select{
     padding:0.2em 0.6em;
     width:8em;
     border-radius:1rem;
     background-color:transparent;
+}
+
+option{
+    color:black;
 }
 
 /* II - HIJOS DE ELEMENTOS */
@@ -57,6 +74,11 @@ nav a{
 .clicked-button:hover{
     background-color:#1a1c1f;
     border:5px solid #1a1c1f;
+}
+
+.send-btn:hover{
+    background-color:var(--back);
+    color:var(--darker);
 }
 
 /* IV - CLASES */
@@ -167,6 +189,7 @@ nav a{
 .proj-desc{
     width:80%;
     font-size:1.3rem;
+    font-weight:600;
 }
 
 .proj-link{
@@ -240,7 +263,7 @@ nav a{
 .form{
     width:60%;
     margin:0 auto;
-    padding:2em 0 3em 0;
+    padding:3em 0;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -251,6 +274,23 @@ nav a{
 .form-section{
     display:flex;
     flex-direction:column;
+}
+
+.send-disclaimer{
+    margin-top:2em; 
+    font-weight:300;
+}
+
+.send-btn{
+    margin-top:1em;
+    padding:0.3em 1.6em;
+    font-size:2rem;
+    font-weight:bold;
+    border-radius:0.5rem;
+    background-color:var(--darker);
+    color:var(--clear);
+    border:4px solid var(--back);
+    transition:all 0.5s;
 }
 
 /* V - HIJOS DE CLASES */
@@ -312,6 +352,7 @@ nav a{
 .project-image img{
     width:42em;
     margin: 0 1em;
+    border:2px solid black;
     border-radius:1rem;
 }
 
@@ -352,4 +393,107 @@ nav a{
 
 .form-section textarea{
     resize:none;
+}
+
+@media (max-width:1440px){
+    .hero{
+        width:88%;
+    }
+    .hero-content{
+       padding-top:3em;
+    }
+    .photo{
+        width:33em;
+    }
+    .hero h1{
+        font-size:5rem;
+    }
+    .project-image img{
+        width:34em;
+    }
+    .languages img{
+        width:5.5em;
+    }
+    .clicked-button, .other-button{
+        font-size:1.2rem;
+    }
+    .others{
+        width:60%;
+    }
+    .form{
+        width:70%;
+    }
+}
+
+@media (max-width:768px){
+    .hero{
+        padding-top:1em;
+        width:100%;
+        flex-direction:column-reverse;
+        align-items:center;
+        justify-content:center;
+    }
+    .hero-content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        padding-bottom:2em;
+    }
+    .hero h2{
+        padding-top:0;
+        padding-bottom:0.2em;
+        font-size:2.5rem;
+    }
+    .hero h3{
+        font-size:2rem;
+    }
+    .Argentina{
+        padding-bottom:1em;
+    }
+    .separator{
+        display:none;
+    }
+    .project-image img{
+        margin:0.5em 0;
+    }
+    .languages img{
+        margin:0.5em;
+    }
+    .dots h1{
+        font-size:2.5rem;
+    }
+    .links h4{
+        font-size:1.5rem;
+    }
+    .links .deploy h4{
+        margin-bottom:2.2em;
+    }
+    .other-buttons{
+        flex-direction:column;
+    }
+    .others{
+        width:100%;
+    }
+    .clicked-button, .other-button{
+        margin:1em 0;
+        font-size:1.6rem;
+    }
+    .form{
+        width:100%;
+    }
+    .form-section input, .form-section textarea{
+        width:35em;
+    }
+    .send-disclaimer{
+        font-size:0.8rem;
+        font-weight:bold;
+    }
+    .send-btn{
+        margin-top:0.5em;
+    }
+}
+
+@media (max-width:400px){
+    
 }
