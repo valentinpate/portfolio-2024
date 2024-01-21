@@ -11,7 +11,8 @@ function Intro(){
         <div className="intro-intro">
             <div className="title">
                 <h1>Introducción</h1>
-                <button className={dark ? "dark-title-btn" : "clear-title-btn"} onClick={()=>{window.scrollTo(0,0)}} title="Ir al inicio"><i class="bi bi-arrow-up-short"></i></button>
+                <button className={dark ? "dark-title-btn no-responsive-p" : "clear-title-btn no-responsive-p"} onClick={()=>{window.scrollTo(0,0)}} title="Ir al inicio"><i class="bi bi-arrow-up-short"></i></button>
+                <p className="yes-responsive-p" style={{fontSize:"2.5em"}}><i class="bi bi-arrow-down-short"></i></p>
             </div>
             <p>22 años.</p>
             <p>Programador web full stack de la Universidad Tecnológica Nacional (UTN) y estudiante de la tecnicatura en producción digital de la Universidad Nacional de Quilmes (UNQ).</p>

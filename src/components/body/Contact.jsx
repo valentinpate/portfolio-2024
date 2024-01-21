@@ -34,7 +34,7 @@ function Contact() {
 
   return(
     <>
-        <section className="contact" id="Cont">
+        <section className={dark ? "contact dark-font" : "contact"} id="Cont">
             <div className="title">
                 <h1>Contacto</h1>
                 <button className={dark ? "dark-title-btn" : "clear-title-btn"} onClick={()=>{window.scrollTo(0,0)}} title="Ir al inicio"><i class="bi bi-arrow-up-short"></i></button>

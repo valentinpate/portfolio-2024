@@ -2,18 +2,16 @@ import '../css/style.css'
 import '../css/clear.css';
 import '../css/dark.css'
 import { DarkMode } from '../../context/DarkMode';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import Header from '../parts/Header';
 
 function Hero() {
-    const {dark, setDark} = useContext(DarkMode)
-    function set(){
-        setDark(!dark)
-    }
+    const {dark, set} = useContext(DarkMode)
+
   return(
     <section id="Hero">
         <Header/>
-        <div className="options">
+        <div className="options not-burger">
             <select className={dark ? "dark-select" : "clear-select"} name="language" id="language">
                     <option value="es">Español</option>
                     <option value="en">English</option>

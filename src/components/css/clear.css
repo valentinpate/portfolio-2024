@@ -12,6 +12,11 @@
     background-color:var(--clear)
 }
 
+.clear-burger-menu{
+    background-color:var(--clear);
+    border:5px solid var(--darker)
+}
+
 .clear-select{
     border:1px solid black;
 }

@@ -16,10 +16,6 @@
 
 /* I - ELEMENTOS HTML */
 
-nav{
-    display:flex;
-}
-
 a{
     cursor:pointer;
     color:black;
@@ -51,6 +47,10 @@ option{
     color:black;
 }
 
+ul{
+    list-style:none;
+}
+
 /* II - HIJOS DE ELEMENTOS */
 
 nav a{
@@ -62,10 +62,6 @@ nav a{
 
 /* III - PSEUDOCLASES */
 
-/* .project-image img:last-child{
-    filter:invert(100%);
-} */
-
 .other-button:hover{
     background-color:black;
     border:5px solid black;
@@ -76,7 +72,7 @@ nav a{
     border:5px solid #1a1c1f;
 }
 
-.send-btn:hover{
+.send-btn:hover, .dark-btn:hover{
     background-color:var(--back);
     color:var(--darker);
 }
@@ -87,8 +83,58 @@ nav a{
     text-transform: uppercase;
 }
 
+.yes-responsive-p{
+    display:none;
+}
+
 .logo{
     width:5em;
+}
+
+.header-nav{
+    display:flex;
+}
+
+.burger{
+    display:none;
+    background-color:transparent;
+    border:none;
+    font-size:3.2rem;
+    margin-right:0.2em;
+}
+
+.burger-menu{
+    width:13em;
+    padding:1em 0.6em;
+    position:absolute;
+    top:1.8em;
+    right:2.1em;
+    background-color:white;
+    border-radius:0.5rem;
+}
+
+.burger-menu-options, .burger-nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0.3em 0;
+}
+
+.burger-close{
+    margin-left:4.5em;
+    background-color:transparent;
+    border:none;
+    font-size:2rem;
+}
+
+.dark-btn{
+    margin-top:1em;
+    padding:0.3em 1.6em;
+    border-radius:0.5rem;
+    background-color:var(--darker);
+    color:var(--clear);
+    border:4px solid var(--back);
+    transition:all 0.5s;
 }
 
 .options{
@@ -134,7 +180,6 @@ nav a{
     display:flex;
     justify-content:center;
 }
-
 
 .title{
     padding-bottom:2em;
@@ -340,6 +385,7 @@ nav a{
 
 .intro p, .exp-desc{
     font-size:1.6rem;
+    text-align:justify;
 }
 
 .title button{
@@ -426,6 +472,9 @@ nav a{
 }
 
 @media (max-width:768px){
+    nav a{
+        margin:0 0.5em;
+    }
     .hero{
         padding-top:1em;
         width:100%;
@@ -494,6 +543,98 @@ nav a{
     }
 }
 
-@media (max-width:400px){
-    
+@media (max-width:576px){
+    header{
+        padding-top:2em;
+    }
+    .not-burger, .no-responsive-p{
+        display:none;
+    }
+    .burger, .burger-close{
+        display:block;
+    }
+    .yes-responsive-p{
+        display:block;
+        margin-top:0.2em;
+    }
+    .hero{
+        padding-top:0;
+        text-align:center;
+    }
+    .hero h1{
+        font-size:3rem;
+    }
+    .hero h2{
+        padding:0;
+        font-size:1.3rem;
+    }
+    .hero h3{
+        font-size:1.1rem;
+    }
+    .flag{
+        margin-left:0.5em;
+        margin-top:0;
+        width:1.8em;
+    }
+    .photo{
+        width:20em;
+    }
+    .title{
+        padding-bottom:1em;
+    }
+    .intro-intro p, .exp-desc{
+        font-size:1.3rem;
+    }
+    .project-box{
+        width:100%;
+    }
+    .dots h1{
+        font-size:1.2rem;
+    }
+    .project-box h2{
+        font-size:1.3rem;
+        margin-bottom:0;
+    }
+    .project-image img{
+        width:16em;
+        border:1px solid black;
+    }
+    .project-image img:last-child{
+        display:none;
+    }
+    .languages img{
+        width:3em;
+    }
+    .proj-desc{
+        width:75%;
+        font-size:1rem;
+    }
+    .links{
+        flex-direction:column;
+    }
+    .links div{
+        margin-bottom:2em;
+    }
+    .links a{
+        font-size:3.5rem;
+    }
+    .links .deploy h4{
+        margin-bottom:1em;
+    }
+    .others{
+        height:100%;
+    }
+    .others img{
+        width:5em;
+    }
+    .other{
+        flex-direction:column;
+    }
+    .form-section input, .form-section textarea{
+        width:17.5em;
+    }
+    .send-disclaimer{
+        width:60%;
+        text-align:center;
+    }
 }

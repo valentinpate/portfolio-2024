@@ -16,6 +16,11 @@
     background-color:var(--back);
 }
 
+.dark-burger-menu{
+    background-color:var(--back);
+    border:5px solid var(--darker);
+}
+
 .dark-select{
     color:var(--clear);
     border:1px solid var(--cfont);

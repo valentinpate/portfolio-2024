@@ -8,7 +8,13 @@ import { useState } from 'react';
 
 function App() {
   const [dark, setDark] = useState(false)
+
+  function set(){
+    setDark(!dark)
+  }
+
   let body = document.querySelector("body")
+  
   if(dark){ 
     body.style.backgroundColor="#705523" 
   }else{
@@ -16,7 +22,7 @@ function App() {
   }
 
   return (
-    <DarkMode.Provider value={{dark, setDark}}>
+    <DarkMode.Provider value={{dark, set}}>
       <Hero/>
       <Intro/>
       <Exp/>
