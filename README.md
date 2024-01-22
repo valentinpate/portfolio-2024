@@ -1,13 +1,15 @@
-# REACT PORTFOLIO 2024
+# REACT PORTFOLIO 2024 (WIP)
 
 ### Original design made by me. Vercel deploy soon.
 
 ## Languages and Frameworks used on this portfolio:
-<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" style="width:80px;margin:0 0.5em" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="CSS" style="width:80px;margin:0 0.5em" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="JS" style="width:80px;margin:0 0.5em" />
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React" style="width:80px;margin:0 0.5em" />
-<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_wordmark_logo_icon_146620.png" alt="Bootstrap" style="width:80px;margin:0 0.5em" />
+<div style="display:flex;">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" style="width:80px;margin:0 0.5em" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="CSS" style="width:80px;margin:0 0.5em" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="JS" style="width:80px;margin:0 0.5em" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React" style="width:80px;margin:0 0.5em" />
+    <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_wordmark_logo_icon_146620.png" alt="Bootstrap" style="width:80px;margin:0 0.5em" />
+</div>
 
 ### Additional dependencies
 * i18Next for Translation
