@@ -1,0 +1,58 @@
+{
+    "header":{
+        "nav-intro":"Introduction",
+        "nav-exp":"Experience",
+        "nav-cont":"Contact"
+    },
+    "hero":{
+        "hero-dark-mode":"← Dark screen",
+        "hero-stack":"Full Stack Web Developer",
+        "hero-welcome":"Welcome to my portfolio."
+    },
+    "intro":{
+        "intro-top":"Go to the top",
+        "intro-age":"22 years old.",
+        "intro1":"Full stack developer from Argentina's National Technological University (Universidad Tecnológica Nacional, UTN) and also studying digital production at Quilmes' National University (UNQ).",
+        "intro2":"CEFR Level B2 in English (First Certificate Exam passed in 2019).",
+        "intro3":"I'm always eager to learn new things in the world of web development and programming. I started in 2022 by making basic web pages using HTML and CSS at UNQ, where I found out that I've got into a world that caught my attention. I was already going further by the next year, learning JavaScript and working with frameworks and APIs at the UTN. I'm currently working on MERN projects (MongoDB + Express.js + React + Node.js), looking for something new."
+    },
+    "exp":{
+        "exp-desc":"In this section I will show you several web projects where I am the developer or took part in and from where I learned new concepts and lessons and grew up on theory and practice.",
+        "projects":{
+            "proj-desc1":"My first portfolio which I wrote in only HTML and CSS at the UTN, inspired in an original Behance design and uploaded on GitHub on June 2023.",
+            "proj-desc2":"My first time on React! It was hard at the beginning but once I investigated and established the main goals of this project I could finally understand the job and also made my first step into this wonderful framework. Uploaded on GitHub in July 2023 and inspired in a Behance original design.",
+            "proj-desc3":"My first time developing an e-commerce web page from the beginning and it was a collaboration! No one on the team ever made a project like this using Node.js and MongoDB Atlas but we managed to succeed with organization and will. Inspired on a Behance design and uploaded on GitHub in November 2023."
+        },
+        "project-page":{
+            "original":"Original design",
+            "github":"GitHub repository"
+        },
+        "exp-more-skills":"More skills",
+        "skills":{
+            "fce":"B2 CEFR Level (FCE)",
+            "framework-js":"JS Framework",
+            "framework-css":"CSS Framework",
+            "db":"Databases",
+            "editors":"Image / Audio-video editing",
+            "english":"English"
+        }
+    },
+    "contact":{
+        "contact-sent-usestate":{
+            "sent-init":"Please, fill in all the fields in case you want to send an e-mail.",
+            "sending":"Sending...",
+            "sent-warn":"Don't forget to fill in all of the form's fields before sending your e-mail!",
+            "sent-done":"Your e-mail has been sent. Thanks for contacting me.",
+            "sent-error":"There has been a mistake while sending your mail. Please, try again later."
+        },
+        "contact-form":{
+            "contact-form-name":"Name",
+            "contact-form-subject":"Subject",
+            "contact-form-message":"Message",
+            "contact-form-send":"Send"
+        }
+    },
+    "footer":{
+        "gh-link":"Go to the portfolio's GitHub repo"
+    }
+}

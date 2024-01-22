@@ -3,9 +3,11 @@ import '../css/clear.css';
 import '../css/dark.css'
 import { useContext } from 'react'
 import { DarkMode } from '../../context/DarkMode'
+import { Translation } from '../../context/Translation'
 
 function Project({ name, img, front, back, desc, link, repo, deploy }){
     const {dark} = useContext(DarkMode)
+    const {t} = useContext(Translation)
     return(
         <div className="project">
             <div className={dark ? "project-box text-center position-relative dark-project-box" : "project-box text-center position-relative clear-project-box"}>
@@ -39,11 +41,11 @@ function Project({ name, img, front, back, desc, link, repo, deploy }){
                 <p className="proj-desc">{desc}</p>
                 <div className="links">
                     <div className="original">
-                        <h4 className="uppercase">Diseño original</h4>
+                        <h4 className="uppercase">{t("exp.project-page.original")}</h4>
                         <a href={link} target="_blank" className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-file-earmark"></i></a>
                     </div>
                     <div className="github">
-                        <h4 className="uppercase">Repositorio de GitHub</h4>
+                        <h4 className="uppercase">{t("exp.project-page.github")}</h4>
                         <a href={repo} target="_blank" className={dark ? "proj-link dark-title-btn" : "proj-link clear-title-btn"}><i class="bi bi-github"></i></a>
                     </div>
                     <div className="deploy">

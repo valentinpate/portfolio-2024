@@ -1,0 +1,64 @@
+{
+    "header":{
+        "nav-intro":"Introducción",
+        "nav-exp":"Experiencia",
+        "nav-cont":"Contacto"
+    },
+    "hero":{
+        "hero-dark-mode":"← Modo oscuro",
+        "hero-stack":"Programador Web Full Stack",
+        "hero-welcome":"Bienvenidx a mi portfolio."
+    },
+    "intro":{
+        "intro-title":"Introducción",
+        "intro-top":"Ir al inicio",
+        "intro-age":"22 años.",
+        "intro1":"Programador web full stack de la Universidad Tecnológica Nacional (UTN) y estudiante de la tecnicatura en producción digital de la Universidad Nacional de Quilmes (UNQ).",
+        "intro2":"Nivel B2 en idioma inglés (First Certificate Exam de la Universidad de Cambridge rendido y aprobado en 2019).",
+        "intro3":"Siempre con ganas de aprender más en el vasto mundo de los developers y la programación. Empecé en el año 2022 armando pequeñas páginas web con HTML y CSS mientras cursaba en la materia de diseño web de la UNQ, en donde me di cuenta de que había entrado en un enorme mundo que me llamaba enormemente la atención. Al año siguiente ya estaba en la UTN aprendiendo a programar en JavaScript y leyendo sobre frameworks y bases de datos. Actualmente estoy trabajando en proyectos MERN (MongoDB + Express.js + React + Node.js) y practicando con APIs, en busca de desafíos."
+    },
+    "exp":{
+        "exp-title":"Experiencia",
+        "exp-desc":"En esta sección se mostrarán distintos proyectos web de los que he aprendido y crecido tanto en la teoría como en la práctica, desarrollados por mí tanto de forma individual como en equipo con mi experiencia y conocimientos.",
+        "projects":{
+            "proj-name1":"HTML - CSS Portfolio",
+            "proj-desc1":"Mi primer portfolio hecho solamente con HTML y CSS durante la cursada de la diplomatura en la Universidad Tecnológica Nacional (UTN), basado en un diseño original de Behance y subido a GitHub en junio de 2023.",
+            "proj-name2":"React Portfolio 2023",
+            "proj-desc2":"¡Mi primera vez con React! Fue difícil al principio pero una vez que investigué y establecí las metas claras de este proyecto pude adaptarme con facilidad al trabajo y entender más acerca de este maravilloso framework. Inspirado en un diseño de Behance y subido a GitHub en julio de 2023.",
+            "proj-name3":"MOWARDIN E-Commerce",
+            "proj-desc3":"Mi primera vez desarrollando un e-commerce desde cero en equipo. Ninguno de los miembros del grupo había hecho un trabajo de este nivel con Node.js pero con una firme organización y voluntad entre nosotros logramos tomar el control y rearmar este e-commerce diseñado en Behance con base de datos MongoDB Atlas desde cero. Subido a GitHub en noviembre de 2023."
+        },
+        "project-page":{
+            "original":"Diseño original",
+            "github":"Repositorio de GitHub"
+        },
+        "exp-more-skills":"Más habilidades",
+        "skills":{
+            "fce":"Nivel B2 de Inglés (FCE)",
+            "framework-js":"Framework JS",
+            "framework-css":"Framework CSS",
+            "db":"Bases de datos",
+            "editors":"Editores de imagen - audio/vídeo",
+            "english":"Inglés"
+        }
+    },
+    "contact":{
+        "contact-sent-usestate":{
+            "sent-init":"Por favor, rellene todos los campos en caso de que usted quiera enviar un mail.",
+            "sending":"Enviando...",
+            "sent-warn":"¡No olvide rellenar todos los campos para que el mail sea enviado!",
+            "sent-done":"Su mensaje ha sido enviado. Muchas gracias por contactarse.",
+            "sent-error":"Hubo un error al enviar su mensaje. Vuelva a intentarlo más tarde."
+        },
+        "contact-title":"Contacto",
+        "contact-form":{
+            "contact-form-name":"Nombre",
+            "contact-form-subject":"Asunto",
+            "contact-form-message":"Mensaje",
+            "contact-form-send":"Enviar"
+        }
+    },
+    "footer":{
+        "gh-link":"Ir al repositorio de este portfolio"
+    }
+}
