@@ -17,7 +17,7 @@
 ## Commits
 
 <ul style="list-style:none;">
-    <li>PART 1: First Commit and Header Development</li>
+    <li>start: First Commit and Header Development</li>
     <li>PART 2: Components: Hero and Intro</li>
     <li>PART 3: Components: Experience</li>
     <li>PART 4: Components: Contact and Footer</li>
