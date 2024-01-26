@@ -25,5 +25,6 @@
     <li>PART 6: Responsive design part 2</li>
     <li>PART 7: i18Next Application</li>
     <li>PART 8: Responsive design part 3 / details</li>
+    <li>PART 9: Added hero picture</li>
 </ul>
 
