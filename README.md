@@ -1,6 +1,8 @@
 # REACT PORTFOLIO 2024 (WIP)
 
-### Original design made by me. Vercel deploy soon.
+### Original design made by me.
+
+Vercel deploy: https://valentinpate.vercel.app/
 
 ## Languages and Frameworks used on this portfolio:
 <div style="display:flex;">
