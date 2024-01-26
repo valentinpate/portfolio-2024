@@ -37,7 +37,7 @@ function Header() {
                     <option value="es">Español</option>
                     <option value="en">English</option>
               </select>
-              <button onClick={()=>{set(); setBurger(false)}} className="dark-btn">{dark ? "Modo Oscuro" : "Modo Claro"}</button>
+              <button onClick={()=>{set(); setBurger(false)}} className="dark-btn">{dark ? "Modo Claro" : "Modo Oscuro"}</button>
             </div>
           </div>}
     </header>
