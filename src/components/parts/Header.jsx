@@ -7,11 +7,12 @@ import { Translation } from '../../context/Translation';
 
 function Header() {
     const {dark, set} = useContext(DarkMode)
-    const {t, i18n, language, setLanguage} = useContext(Translation)
+    const {t, i18n, language, setLanguage, setSent} = useContext(Translation)
     const [burger, setBurger] = useState(false)
 
     useEffect(()=>{
       i18n.changeLanguage(language)
+      setSent(t("contact.contact-sent-usestate.sent-init"))
     },[language, i18n])
 
   return(

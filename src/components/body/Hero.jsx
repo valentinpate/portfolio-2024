@@ -8,10 +8,11 @@ import { Translation } from '../../context/Translation';
 
 function Hero() {
     const {dark, set} = useContext(DarkMode)
-    const {t, i18n, language, setLanguage} = useContext(Translation)
+    const {t, i18n, language, setLanguage, setSent} = useContext(Translation)
 
     useEffect(()=>{
         i18n.changeLanguage(language)
+        setSent(t("contact.contact-sent-usestate.sent-init"))
     },[language,i18n]) //useEffect así evitamos if
 
   return(
@@ -28,7 +29,7 @@ function Hero() {
             </div>
         </div>
         <div className="hero">
-            <img src="/test.jpg" alt="" className="photo" />
+            <img src="/p1.jpg" alt="" className="photo" />
             <div className={dark ? "hero-content dark-font" : "hero-content"}>
                 <h1>Valentín Pate</h1>
                 <h2>{t("hero.hero-stack")}</h2>

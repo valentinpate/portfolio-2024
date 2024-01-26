@@ -12,6 +12,7 @@ function App() {
   const [dark, setDark] = useState(false)
   const [t, i18n] = useTranslation("global")
   const [language, setLanguage] = useState("es")
+  const [sent, setSent] = useState(t("contact.contact-sent-usestate.sent-init"))
 
   function set(){
     setDark(!dark)
@@ -26,14 +27,13 @@ function App() {
   }
 
   return (
-    <Translation.Provider value={{t, i18n, language, setLanguage}}>
+    <Translation.Provider value={{t, i18n, language, setLanguage, sent, setSent}}>
       <DarkMode.Provider value={{dark, set}}>
         <Hero/>
         <Intro/>
         <Exp/>
         <Contact/>
       </DarkMode.Provider>
-      <h2>{t("header.nav-intro")}</h2>
     </Translation.Provider>
   );
 }

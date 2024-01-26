@@ -10,9 +10,9 @@ function Footer() {
     const {t} = useContext(Translation)
   return(
     <footer className={dark ? "dark-font" : ""}>
-        <p>&copy; Valentín Pate 2024 - {t("exp.project-page.original")}</p>
+        <p>&copy; Valentín Pate 2024 - </p>
         {/* para diseño original podemos usar {t("exp.project-page.original")} */}
-        {/* <a href="">Ir al repositorio de este portfolio</a> */}
+        <a href="https://github.com/valentinpate/portfolio-2024" className="gh-link">{t("footer.gh-link")}</a>
     </footer>
   )
 }

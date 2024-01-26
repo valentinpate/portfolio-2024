@@ -9,12 +9,11 @@ import Footer from '../parts/Footer';
 
 function Contact() {
     const {dark} = useContext(DarkMode)
-    const {t} = useContext(Translation)
+    const {t, sent, setSent} = useContext(Translation)
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [subject, setSubject] = useState("")
     const [message, setMessage] = useState("")
-    const [sent, setSent] = useState(t("contact.contact-sent-usestate.sent-init"))
 
     function send(e){
         setSent(t("contact.contact-sent-usestate.sending"))

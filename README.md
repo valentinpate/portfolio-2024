@@ -17,12 +17,13 @@
 ## Commits
 
 <ul style="list-style:none;">
-    <li>start: First Commit and Header Development</li>
+    <li>START: First Commit and Header Development</li>
     <li>PART 2: Components: Hero and Intro</li>
     <li>PART 3: Components: Experience</li>
     <li>PART 4: Components: Contact and Footer</li>
     <li>PART 5: Responsive design part 1</li>
     <li>PART 6: Responsive design part 2</li>
     <li>PART 7: i18Next Application</li>
+    <li>PART 8: Responsive design part 3 / details</li>
 </ul>
 

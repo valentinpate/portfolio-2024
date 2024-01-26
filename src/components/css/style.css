@@ -77,6 +77,10 @@ nav a{
     color:var(--darker);
 }
 
+.gh-link:hover{
+    text-decoration:underline;
+}
+
 /* IV - CLASES */
 
 .uppercase{
@@ -160,6 +164,7 @@ nav a{
 
 .photo{
     width:35em;
+    margin:0 1em;
     border-radius:1rem;
 }
 
@@ -338,6 +343,11 @@ nav a{
     transition:all 0.5s;
 }
 
+.gh-link{
+    margin-left:0.3em;
+    font-weight:bold;
+}
+
 /* V - HIJOS DE CLASES */
 
 .options select, .options .form-check{
@@ -442,15 +452,6 @@ nav a{
 }
 
 @media (max-width:1440px){
-    .hero{
-        width:88%;
-    }
-    .hero-content{
-       padding-top:3em;
-    }
-    .photo{
-        width:33em;
-    }
     .hero h1{
         font-size:5rem;
     }
@@ -459,6 +460,15 @@ nav a{
     }
     .languages img{
         width:5.5em;
+    }
+    .hero{
+        width:88%;
+    }
+    .hero-content{
+       padding-top:3em;
+    }
+    .photo{
+        width:33em;
     }
     .clicked-button, .other-button{
         font-size:1.2rem;
@@ -471,24 +481,43 @@ nav a{
     }
 }
 
-@media (max-width:768px){
-    nav a{
-        margin:0 0.5em;
-    }
+@media(max-width:1400px){
     .hero{
-        padding-top:1em;
-        width:100%;
-        flex-direction:column-reverse;
-        align-items:center;
-        justify-content:center;
+        width:90%;
     }
-    .hero-content{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding-bottom:2em;
+    .photo{
+        width:30em;
     }
+}
+
+@media(max-width:1300px){
+    .hero{
+        width:92%;
+    }
+    .photo{
+        width:26em;
+    }
+}
+
+@media(max-width:1218px){
+    .hero{
+        width:95%;
+    }
+    .photo{
+        width:24em;
+    }
+}
+
+@media(max-width:1147px){
+    .hero{
+        width:97%;
+    }
+    .photo{
+        width:23em;
+    }
+}
+
+@media (max-width:1024px){
     .hero h2{
         padding-top:0;
         padding-bottom:0.2em;
@@ -497,11 +526,11 @@ nav a{
     .hero h3{
         font-size:2rem;
     }
-    .Argentina{
-        padding-bottom:1em;
+    .separator h1{
+        font-size:3.6rem;
     }
-    .separator{
-        display:none;
+    .dots h1{
+        font-size:3.3rem;
     }
     .project-image img{
         margin:0.5em 0;
@@ -509,14 +538,61 @@ nav a{
     .languages img{
         margin:0.5em;
     }
+    .links h4{
+        font-size:1.2rem;
+        font-weight:bold;
+    }
+    .Argentina{
+        padding-bottom:1em;
+    }
+    .form{
+        width:100%;
+    }
+
+}
+
+@media (max-width:939px){
+    .form-section input, .form-section textarea{
+        width:35em;
+    }
+    .separator{
+        display:none;
+    }
+}
+
+@media (max-width:768px){
+    nav a{
+        margin:0 0.5em;
+    }
     .dots h1{
         font-size:2.5rem;
     }
     .links h4{
         font-size:1.5rem;
     }
-    .links .deploy h4{
-        margin-bottom:2.2em;
+    .hero{
+        padding-top:1em; 
+        width:100%;
+        flex-direction:column-reverse;
+        align-items:center;
+        justify-content:center;
+    }
+    .photo{
+        width:24.5em;
+    }
+    .no-responsive-p{
+        display:none;
+    }
+    .yes-responsive-p{
+        display:block;
+        margin-top:0.3em;
+    }
+    .hero-content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        padding-bottom:2em;
     }
     .other-buttons{
         flex-direction:column;
@@ -528,12 +604,6 @@ nav a{
         margin:1em 0;
         font-size:1.6rem;
     }
-    .form{
-        width:100%;
-    }
-    .form-section input, .form-section textarea{
-        width:35em;
-    }
     .send-disclaimer{
         font-size:0.8rem;
         font-weight:bold;
@@ -541,25 +611,23 @@ nav a{
     .send-btn{
         margin-top:0.5em;
     }
+    .links .deploy h4{
+        margin-bottom:2.2em;
+    }
+}
+
+@media (max-width:650px){
+    .form-section input, .form-section textarea{
+        width:17.5em;
+    }
 }
 
 @media (max-width:576px){
     header{
         padding-top:2em;
     }
-    .not-burger, .no-responsive-p{
-        display:none;
-    }
-    .burger, .burger-close{
-        display:block;
-    }
-    .yes-responsive-p{
-        display:block;
-        margin-top:0.2em;
-    }
-    .hero{
-        padding-top:0;
-        text-align:center;
+    footer{
+        font-size:0.7rem;
     }
     .hero h1{
         font-size:3rem;
@@ -571,22 +639,8 @@ nav a{
     .hero h3{
         font-size:1.1rem;
     }
-    .flag{
-        margin-left:0.5em;
-        margin-top:0;
-        width:1.8em;
-    }
-    .photo{
-        width:20em;
-    }
-    .title{
-        padding-bottom:1em;
-    }
     .intro-intro p, .exp-desc{
         font-size:1.3rem;
-    }
-    .project-box{
-        width:100%;
     }
     .dots h1{
         font-size:1.2rem;
@@ -599,11 +653,47 @@ nav a{
         width:16em;
         border:1px solid black;
     }
+    .languages img{
+        width:3em;
+    }
+    .links div{
+        margin-bottom:2em;
+    }
+    .links a{
+        font-size:3.5rem;
+    }
+    .others img{
+        width:5em;
+    }
+    .media a{
+        font-size:3.5rem;
+    }
     .project-image img:last-child{
         display:none;
     }
-    .languages img{
-        width:3em;
+    .not-burger{
+        display:none;
+    }
+    .burger, .burger-close{
+        display:block;
+    }
+    .hero{
+        padding-top:0;
+        text-align:center;
+    }
+    .flag{
+        margin-left:0.5em;
+        margin-top:0;
+        width:1.8em;
+    }
+    .photo{
+        width:20em;
+    }
+    .title{
+        padding-bottom:1em;
+    }
+    .project-box{
+        width:100%;
     }
     .proj-desc{
         width:75%;
@@ -612,26 +702,14 @@ nav a{
     .links{
         flex-direction:column;
     }
-    .links div{
-        margin-bottom:2em;
-    }
-    .links a{
-        font-size:3.5rem;
-    }
     .links .deploy h4{
         margin-bottom:1em;
     }
     .others{
         height:100%;
     }
-    .others img{
-        width:5em;
-    }
     .other{
         flex-direction:column;
-    }
-    .form-section input, .form-section textarea{
-        width:17.5em;
     }
     .send-disclaimer{
         width:60%;
